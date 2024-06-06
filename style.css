@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #de8c8c;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #e77575;
+    width: 350px;
+    height: 150px;
+}
+
+.container #guessField, .container #guessSubmit{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.container #guessField{
+    background-color: rgb(150, 191, 238);
+    font-family: Arial, sans-serif;
+    font-size: auto;
+}
+
+#guessResult{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #e77575;
+    width: 350px;
+    padding: 20px 10px;
+    visibility: hidden;
+}
