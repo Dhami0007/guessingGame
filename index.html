@@ -14,10 +14,13 @@
             </div>
             <div class="guessEntries">
                 <input type="number" id="guessField">
-                <button id="guessSubmit">Submit</button>
+                <button id="guessSubmit" onclick="handleSubmit()">Submit</button>
             </div>
         </div>
-    <div id="guessResult"></div>
+        <div id="guessResult">
+            <h5 id="statement"></h5>
+            <h5 id="attempts"></h5>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
