@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>This is a Guessing Game!</h1>
     <div class="container">
         <div id="guessBox">
-            <p>Guess a number between 1 and 100</p>
-            <input type="number" id="guessField">
-            <button id="guessSubmit">Submit</button>
+            <div class="head">
+                <h1>Guess a number between 1 and 100</h1>
+            </div>
+            <div class="guessEntries">
+                <input type="number" id="guessField">
+                <button id="guessSubmit">Submit</button>
+            </div>
         </div>
-    </div>
     <div id="guessResult"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

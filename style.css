@@ -3,35 +3,69 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #de8c8c;
+    background-color: #dc7b3c;;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     height: 100vh;
 }
 
-.container{
+#guessBox{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: #e77575;
-    width: 350px;
-    height: 150px;
+    border-radius: 60px;
+    background-color: white;
+    color: black;
+    height: 200px;
 }
 
-.container #guessField, .container #guessSubmit{
+#guessBox .head{
+    border: 1px solid #dc7b3c;
+    padding: 20px 30px;
+}
+
+#guessBox .guessEntries{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 75%;
+    padding: 20px 30px 30px;
+}
+
+#guessBox #guessField{
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #dc7b3c;
+    border-radius: 10px;
+}
+
+#guessBox #guessField:focus{
+    outline: none;
+}
+
+#guessBox #guessSubmit{
+    width: 150px;
+    background-color: white;
+    color: #dc7b3c;
+    border: 2px solid #dc7b3c;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
     padding: 5px;
-    border-radius: 10px;
+    transition: 0.5s ease;
 }
 
-.container #guessField{
-    background-color: rgb(150, 191, 238);
-    font-family: Arial, sans-serif;
-    font-size: auto;
+#guessBox #guessSubmit:hover{
+    background-color: #dc7b3c;
+    color: white;
+    cursor: pointer;
+}
+
+#guessBox #guessSubmit{
+    width: 150px;
 }
 
 #guessResult{
